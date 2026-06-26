@@ -1,10 +1,10 @@
 <script>
-	// Destructure the data prop using the Svelte 5 page proxy pattern
+	import Navbar from "../navbar.svelte";
 	let { data } = $props();
 </script>
+<Navbar />
 
 <h1>Blog posts</h1>
-<a href="/">Home page</a>
 <p>A random collection of unoriginal thoughts from a martian girl having a human experience</p>
 <ul>
 {#each data.links as link (link.slug)}
