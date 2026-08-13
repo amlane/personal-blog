@@ -1,2 +1,6 @@
-<a href="/">Home</a>
-<a href="/blog">Reflections</a>
+<nav class="main-nav">
+<ol>
+	<li><a href="/about">ABOUT</a></li>
+	<li><a href="/blog">REFLECTIONS</a></li>
+</ol>
+</nav>
