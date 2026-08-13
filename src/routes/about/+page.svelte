@@ -1,0 +1,2 @@
+<h1>About</h1>
+<p>Hey! I'm Amanda and I've spent the last 6 years as a software engineer leading development teams. I love solving problems, learning new tools, and being part of a collaborative environment. I want to spend my time here learning, growing and contributing meaningful ideas that help leave the world a better place than how I found it.</p>
