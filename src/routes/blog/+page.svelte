@@ -4,8 +4,9 @@
 </script>
 <Navbar />
 
-<h1>Blog posts</h1>
-<p>A random collection of unoriginal thoughts from a martian girl having a human experience</p>
+<h1>Bite-sized Reflections</h1>
+<p>I enjoy examining the deeper meaning underneath ordinary life events. This is a place to share my thoughts, learn from others and allow me a space to continue exploring these ideas and discovering my perspective.</p>
+<p>If you want to connect, please reach out to me at <a href="mailto:reallycoolcoder@gmail.com">reallycoolcoder@gmail.com</a>.</p>
 <ul>
 {#each data.links as link (link.slug)}
  <li>
