@@ -1,5 +1,6 @@
 <script>
     import Navbar from "../../navbar.svelte";
+    	import "../../../../css/main.css";
 	let { data } = $props();
 </script>
 <h1>{data.metadata.title}</h1>

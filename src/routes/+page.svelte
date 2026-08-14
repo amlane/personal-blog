@@ -1,6 +1,5 @@
 <script>
 	import Navbar from "./navbar.svelte";
-	import "../../css/main.css";
 </script>
 <div class="home center-page">
 <header>
