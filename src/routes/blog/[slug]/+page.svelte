@@ -1,11 +1,15 @@
 <script>
-    import Navbar from "../../navbar.svelte";
-    	import "../../../../css/main.css";
+	import Footer from '../../footer.svelte';
+	import HomeBtn from '../../homebtn.svelte';
 	let { data } = $props();
 </script>
-<h1>{data.metadata.title}</h1>
-<p>{data.metadata.date}</p>
-<p>{data.metadata.draft ? 'In Progress' : ''}</p>
+<div class="container center-page">
+<div class="blog page-content">
+<h1 class="title text-center">{data.metadata.title}</h1>
+<p class="py-16">{data.metadata.date}</p>
+<p class="py-16">{data.metadata.draft ? 'In Progress' : ''}</p>
 <div>{@html data.html}</div>
-
-<Navbar />
+</div>
+<Footer />
+<HomeBtn />
+</div>

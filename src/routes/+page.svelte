@@ -1,10 +1,14 @@
 <script>
 	import Navbar from "./navbar.svelte";
+	import Footer from "./footer.svelte";
+	import HomeBtn from "./homebtn.svelte";
 </script>
-<div class="home center-page">
-<header>
-	<h1>Amanda Lane</h1>
+<div class="home center-page text-center">
+<header class="title">
+	<h1 class="font-lg py-16">Amanda Lane</h1>
 	<h2>Build | Write | Design</h2>
 </header>
 <Navbar />
+<Footer />
+<HomeBtn />
 </div>

@@ -1,3 +1,13 @@
-<h1>About</h1>
+<script>
+	import Footer from "../footer.svelte";
+	import Homebtn from "../homebtn.svelte";
+</script>
+<div class="container center-page">
+<div class="about page-content">
+<h1 class="title text-center">About</h1>
 <p>Hey! I'm Amanda and I've spent the last 6 years as a software engineer leading development teams. I love solving problems, learning new tools, and being part of a collaborative environment. I want to spend my time here learning, growing and contributing meaningful ideas that help leave the world a better place than how I found it.</p>
 <p>My original passion for web dev started when I was using MySpace and LiveJournal. I came across profile designs that I didn't even know was possible and felt inspired. I started experimenting with HTML and CSS to create my own profiles, learning as I went. That is the inspiration behind the design of this site and I hope it gives you that same nostalgic feeling of the early 2000s web dev aesthetic.</p>
+</div>
+<Footer />
+<Homebtn />
+</div>

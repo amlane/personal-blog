@@ -1,13 +1,22 @@
 <script>
+	import Footer from '../footer.svelte';
+	import HomeBtn from '../homebtn.svelte';
 	let { data } = $props();
 </script>
-<h1>Reflections</h1>
+<div class="container center-page">
+<div class="reflections page-content">
+<h1 class="text-center title">Reflections</h1>
+<content class="text-center">
 <p>I enjoy examining the deeper meaning underneath ordinary life events. This is a place to share my thoughts, learn from others and allow me a space to continue exploring these ideas and discovering my perspective.</p>
-<p>If you want to connect, please reach out to me at <a href="mailto:reallycoolcoder@gmail.com">reallycoolcoder@gmail.com</a>.</p>
-<ul>
+</content>
+<ul class="center-page py-16">
 {#each data.links as link (link.slug)}
  <li>
-    <a href={link.href}>{link.title}</a>
+    <a href={link.href} class="hoverable">{link.title}</a>
  </li>
  {/each}
 </ul>
+</div>
+<Footer />
+<HomeBtn />
+</div>
