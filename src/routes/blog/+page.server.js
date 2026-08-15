@@ -14,7 +14,8 @@ export const load = async () => {
         return {
             slug,
             title: data.title || slug,
-            href: `/blog/${slug}`
+            href: `/blog/${slug}`,
+            date: data.date || null
         };
     });
 

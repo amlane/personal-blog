@@ -5,7 +5,7 @@
 </script>
 <div class="home center-page text-center">
 <header class="title">
-	<h1 class="font-lg py-16">Amanda Lane</h1>
+	<h1 class="text-xxxl py-16">Amanda Lane</h1>
 	<h2>Build | Write | Design</h2>
 </header>
 <Navbar />

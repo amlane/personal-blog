@@ -144,8 +144,20 @@ ul, ol {
     padding-bottom: 16px;
 }
 
-.font-lg {
-    font-size: 3rem;
+.text-lg {
+    font-size: large;
+}
+
+.text-xl {
+    font-size: x-large;
+}
+
+.text-xxl {
+    font-size: xx-large;
+}
+
+.text-xxxl {
+    font-size: xxx-large;
 }
 
 /* footer styles */
