@@ -183,7 +183,7 @@ ul, ol {
 
 /* navigation menu */
 .main-nav {
-    width: 30%;
+    width: 50%;
 }
 
 .main-nav li a {
@@ -196,7 +196,8 @@ ul, ol {
 
 .main-nav ol {
     list-style:none;
-    margin:0; padding:0;
+    margin:0; 
+    padding:0;
     counter-reset: chapter;
 }
 
