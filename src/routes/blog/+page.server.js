@@ -6,17 +6,18 @@ export const load = async () => {
     const postsDir = path.resolve('posts/blog');
     const files = fs.readdirSync(postsDir);
     
-    const links = files.map((filename) => {
+    const links = []
+    files.forEach((filename) => {
         const content = fs.readFileSync(path.join(postsDir, filename), 'utf-8');
         const { data } = matter(content);
         const slug = filename.replace('.md', '');
-
-        return {
+        if(data.draft === true) return; // Skip draft posts
+        links.push({
             slug,
             title: data.title || slug,
             href: `/blog/${slug}`,
             date: data.date || null
-        };
+        });
     });
 
     return { links };
