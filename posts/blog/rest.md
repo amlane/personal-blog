@@ -16,12 +16,10 @@ I let out a sigh. Stubbornly admitting my defeat, I stood up, grabbed my bucket 
 <br />
 Returning to the floor with my fresh bucket, I was able to finish my chore. Standing up, I took in a deep breath and appreciated the sweet smell of lavender Fabuloso dancing on my olfactory system, admiring a job well done.   
 <br />
-<br />
 The word "rest" conjures certain images in my mind. Sometimes it is me sunbathing on a beach at an all-inclusive resort in some far away land. Other times it is simply me in my favorite sweatpants lounging around my house for a week ordering takeout. I've turned the idea of rest into an escape fantasy rather than learning how to integrate it into my actual reality. 
 <br />
 <br />
 Growing up in a blue collar family in the Midwest, I learned the value of hard work and many of my experiences taught me that my level of output is directly proportional to my value as a person. It was only once I started writing this reflection that I began to understand the origin of my resistance to rest.  
-<br />
 <br />
 Over the years, I have witnessed my mom go through a cycle of moving her way up to achieve major success, only to end up in a life-altering burnout. And as generational cycles go, I've allowed the same pattern to occur in my own life.
 <br />

@@ -18,6 +18,13 @@
  </li>
  {/each}
 </ul>
+<content>
+<p>By making creative writing a practice, I hope to discover more about myself and how I think. Find my contradictions and expose my blind spots. Writing is the ultimate form of thinking, forcing the floating thoughts in our minds into a solid concept.</p>
+<br />
+<p>If you read my work and want to offer me any advice on how to improve my writing, please reach out to me. I would love to connect and learn from others.</p>
+<br />
+<p>All of my posts are written in my own words without the use of AI. This will undoubtedly result in work that is less polished, lacking semantic flow and riddled with grammatical errors that might not "land" the way I had intended but I believe the world could use more authenticity and individuality.</p>
+</content>
 </div>
 <Footer />
 <HomeBtn />
