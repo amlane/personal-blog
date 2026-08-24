@@ -3,12 +3,16 @@
 	import HomeBtn from '../../homebtn.svelte';
 	let { data } = $props();
 
-	const date = data.metadata.date;
-	const formattedDate = new Date(date).toLocaleDateString('en-US', {
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric'
-	});
+	function formatDate(dateStr) {
+    const [year, month, day] = dateStr.split('-').map(Number);
+    const date = new Date(year, month - 1, day); // local time, no timezone shift
+		return date.toLocaleDateString('en-US', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric'
+		});
+	}
+	const formattedDate = formatDate(data.metadata.date);
 </script>
 <div class="container center-page">
 <div class="blog page-content">
