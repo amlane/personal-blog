@@ -22,9 +22,9 @@
 
 <div class="container center-page">
 	<div class="blog page-content">
-		<p class="date text-center">{formattedDate}</p>
 		<h1 class="title text-center">{data.metadata.title}</h1>
-		<div class="py-16">{@html data.html}</div>
+		<div class="main-content py-16">{@html data.html}</div>
+		<p class="date main-content muted-text pt-16">Published {formattedDate}</p>
 	</div>
 	<div class="d-flex space-between" style="width:50%;">
 		{#if prevLink != null}

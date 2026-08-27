@@ -4,8 +4,21 @@
     --red: #e0503a;
     --red-dim: #c2452f;
     --primary-font-color: #000;
-    --muted-font-color: #555;
+    --muted-font-color: #6a6a6a;
     font-family: "IM Fell English", serif;
+    --header-font: "IM Fell English", serif;
+    --content-font: "EB Garamond", serif;
+}
+
+.heading-font {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+}
+
+.content-font {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 /* reset styles */
@@ -71,6 +84,10 @@ ul, ol {
 
 .page-content {
     padding: 48px 25%;
+}
+
+.main-content {
+    font-family: var(--content-font);
 }
 
 .title {
@@ -140,8 +157,20 @@ ul, ol {
     padding-top: 16px;
 }
 
+.pb-12 {
+    padding-bottom: 16px;
+}
+
+.pb-14 {
+    padding-bottom: 16px;
+}
+
 .pb-16 {
     padding-bottom: 16px;
+}
+
+.muted-text {
+    color: var(--muted-font-color);
 }
 
 .text-lg {
