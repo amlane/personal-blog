@@ -1,6 +1,7 @@
 <script>
 	import Footer from '../../footer.svelte';
 	import HomeBtn from '../../homebtn.svelte';
+	import Navbar from '../../navbar.svelte';
 	let { data } = $props();
 
 	function formatDate(dateStr) {
@@ -69,4 +70,5 @@
 	</div>
 	<Footer />
 	<HomeBtn />
+	<Navbar />
 </div>
