@@ -100,8 +100,8 @@ ul, ol {
 
 .hoverable:hover {
     text-shadow: 
-    0 0 10px #d1b3ff, 
-    0 0 5px #b380ff
+    0 0 10px rgba(0, 0, 0, 0.7),
+    0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .icon {
@@ -122,7 +122,7 @@ ul, ol {
     height: 1.75rem;
     display: block;
     color: var(--primary-font-color);
-    padding: 16px 0;
+    /* padding: 16px 0; */
 }
 
 .w-100 {
@@ -151,6 +151,14 @@ ul, ol {
 
 .py-16 {
     padding: 16px 0;
+}
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.pt-12 {
+    padding-top: 12px;
 }
 
 .pt-16 {
