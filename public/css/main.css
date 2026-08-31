@@ -31,7 +31,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 body {
     background: var(--bg-primary);
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 a {
@@ -152,6 +152,14 @@ ul, ol {
     margin-top: 24px;
 }
 
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
 .px-4 {
     padding: 0 4px;
 }
@@ -170,6 +178,10 @@ ul, ol {
 
 .py-16 {
     padding: 16px 0;
+}
+
+.py-24 {
+    padding: 24px 0;
 }
 
 .pt-8 {
@@ -246,6 +258,7 @@ ul, ol {
 .main-nav {
     width: var(--content-width);
     max-width:var(--max-content-width);
+    padding: 25px 0;
 }
 
 .main-nav li a {
@@ -282,7 +295,7 @@ ul, ol {
     order: 2;
     flex: 1;
     align-self: flex-end;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     height: .6em;
     background-repeat: space no-repeat;
     background-image: radial-gradient(circle, var(--primary-font-color) 20%, transparent 21%);
@@ -292,11 +305,14 @@ ul, ol {
     opacity:.85;
 }
 
-/* roman numeral, driven by the li's own position */
+/* roman numeral based on li position */
 .main-nav a::after{
     content: counter(chapter, upper-roman);
     order: 3;
-    font-size: 22px;
     color: var(--primary-font-color);
     opacity:.9;
+}
+
+.page-number {
+    font-size: 22px;
 }

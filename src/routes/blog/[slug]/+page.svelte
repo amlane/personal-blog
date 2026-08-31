@@ -17,9 +17,26 @@
 	let nextLink = $derived(
 		currentIndex !== data.links.length - 1 ? data.links[currentIndex + 1].href : null
 	);
+	let pageNum = $derived(currentIndex + 1);
+	let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+	let symbols = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+
+	let result = $derived.by(() => {
+		let str = '';
+		let n = pageNum;
+
+		for (let i = 0; i < values.length; i++) {
+			while (n >= values[i]) {
+				n -= values[i];
+				str += symbols[i];
+			}
+		}
+		return str;
+	});
 </script>
 
 <div class="blog-post center-page">
+	<span class="page-number mb-16">{result}</span>
 	<div class="content-container">
 		<h1 class="title text-center">{data.metadata.title}</h1>
 		<section class="content-font">
