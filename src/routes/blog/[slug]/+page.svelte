@@ -1,7 +1,5 @@
 <script>
 	import Footer from '../../footer.svelte';
-	import HomeBtn from '../../homebtn.svelte';
-	import Navbar from '../../navbar.svelte';
 	let { data } = $props();
 
 	function formatDate(dateStr) {
@@ -21,13 +19,15 @@
 	);
 </script>
 
-<div class="container center-page">
-	<div class="blog page-content">
+<div class="blog-post center-page">
+	<div class="content-container">
 		<h1 class="title text-center">{data.metadata.title}</h1>
-		<div class="main-content py-16">{@html data.html}</div>
-		<p class="date main-content muted-text pt-16">Published {formattedDate}</p>
+		<section class="content-font">
+			<div class="py-16">{@html data.html}</div>
+			<p class="date muted-text pt-16">Published {formattedDate}</p>
+		</section>
 	</div>
-	<div class="d-flex space-between" style="width:50%;">
+	<div class="d-flex space-between content-container mt-24">
 		{#if prevLink != null}
 			<a href={prevLink} class="d-flex"
 				><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 24 24" fill="none">
@@ -69,6 +69,4 @@
 		{/if}
 	</div>
 	<Footer />
-	<HomeBtn />
-	<Navbar />
 </div>

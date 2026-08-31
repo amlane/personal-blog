@@ -1,18 +1,19 @@
 /* global styles */
 
 :root {
-    --red: #e0503a;
-    --red-dim: #c2452f;
-    --primary-font-color: #000;
+    --primary-font-color: #2B2B2B;
     --muted-font-color: #6a6a6a;
+    --bg-primary: #FDFBF7;
     font-family: "IM Fell English", serif;
     --header-font: "IM Fell English", serif;
     --content-font: "EB Garamond", serif;
+    --max-content-width: 520px;
+    --content-width: 80%;
 }
 
 .heading-font {
   font-family: "IM Fell English", serif;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .content-font {
@@ -26,6 +27,11 @@
 html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: var(--bg-primary);
+    padding-top: 5%;
 }
 
 a {
@@ -63,10 +69,6 @@ ul, ol {
     align-items: center;
 }
 
-.container {
-    padding-bottom: 25px;
-}
-
 /* utility styles */
 
 .red-border {
@@ -79,19 +81,17 @@ ul, ol {
 
 .separator {
     border: .3px solid var(--muted-font-color);
-    width: 50%;
+    width: 100%;
+    max-width: var(--max-content-width);
 }
 
-.page-content {
-    padding: 48px 25%;
+.content-container {
+    width: var(--content-width);
+    max-width: var(--max-content-width)
 }
 
-.main-content {
+.content-font {
     font-family: var(--content-font);
-}
-
-.title {
-    padding: 16px 0;
 }
 
 .hoverable {
@@ -100,8 +100,8 @@ ul, ol {
 
 .hoverable:hover {
     text-shadow: 
-    0 0 10px #d1b3ff, 
-    0 0 5px #b380ff
+    0 0 10px #3D2C1E,
+    0 0 5px #2C221E;
 }
 
 .icon {
@@ -122,15 +122,34 @@ ul, ol {
     height: 1.75rem;
     display: block;
     color: var(--primary-font-color);
-    padding: 16px 0;
 }
 
 .w-100 {
-    width: inherit;
+    width: 100%;
 }
 
 .w-50 {
     width: 50%;
+}
+
+.my-4 {
+    margin: 4px 0;
+}
+
+.my-8 {
+    margin: 8px 0;
+}
+
+.my-16 {
+    margin: 16px 0;
+}
+
+.my-24 {
+    margin: 24px 0;
+}
+
+.mt-24 {
+    margin-top: 24px;
 }
 
 .px-4 {
@@ -151,6 +170,14 @@ ul, ol {
 
 .py-16 {
     padding: 16px 0;
+}
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.pt-12 {
+    padding-top: 12px;
 }
 
 .pt-16 {
@@ -191,11 +218,16 @@ ul, ol {
 
 /* footer styles */
 .footer {
-    width: 100%;
+    width: var(--content-width);
+    max-width: var(--max-content-width);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+}
+
+.footer .menu {
+    width: 100%;
 }
 
 .contact a {
@@ -212,7 +244,8 @@ ul, ol {
 
 /* navigation menu */
 .main-nav {
-    width: 50%;
+    width: var(--content-width);
+    max-width:var(--max-content-width);
 }
 
 .main-nav li a {
@@ -263,7 +296,6 @@ ul, ol {
 .main-nav a::after{
     content: counter(chapter, upper-roman);
     order: 3;
-    font-style:italic;
     font-size: 22px;
     color: var(--primary-font-color);
     opacity:.9;

@@ -1,6 +1,12 @@
+<script>
+	import { page } from '$app/state';
+	console.log(page.data);
+</script>
+
 <nav class="main-nav">
 	<ol>
-		<li><a href="/about">ABOUT</a></li>
-		<li><a href="/blog">REFLECTIONS</a></li>
+		{#each page.data.links as link (link.slug)}
+			<li><a href={link.href}>{link.title.toUpperCase()}</a></li>
+		{/each}
 	</ol>
 </nav>
