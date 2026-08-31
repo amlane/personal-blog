@@ -22,9 +22,10 @@
 							those thoughts.
 						</p>
 						<p>
-							I designed this site as a tribute to my teenage years, spent customizing layouts and
-							blogging on LiveJournal. I wanted to create my own weird little corner of the internet
-							that felt like a person actually made it, without the intention of being commodified.
+							I designed this site as a tribute to my teenage years where I spent countless hours
+							customizing layouts and blogging on LiveJournal. I wanted to create my own weird
+							little corner of the internet that felt like a person actually made it, without the
+							intention of being commodified.
 						</p>
 					</div>
 				</div>
