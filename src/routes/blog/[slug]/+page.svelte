@@ -20,7 +20,7 @@
 </script>
 
 <div class="blog-post center-page">
-	<div class="page-content content-container">
+	<div class="content-container">
 		<h1 class="title text-center">{data.metadata.title}</h1>
 		<section class="content-font">
 			<div class="py-16">{@html data.html}</div>

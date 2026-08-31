@@ -4,17 +4,17 @@
 </script>
 
 <div class="container center-page">
-	<div class="about page-content">
-		<h1 class="title">Hey, I'm Amanda.</h1>
+	<div class="about content-container">
 		<div class="main-content">
 			<div class="d-flex flex-column">
 				<div class="d-flex pt-16">
-					<img
-						src={ProfilePic}
-						alt="a girl and her dog"
-						style="max-width:200px;padding:12px; margin-right:12px;border:2px solid gray;object-fit: cover;"
-					/>
 					<div style="align-self:flex-start;">
+						<img
+							src={ProfilePic}
+							alt="a girl and her dog"
+							style="float:right;max-width:200px;padding:12px; margin-left:14px;border:2px solid gray;object-fit: cover;"
+						/>
+						<h1 class="title pb-12">Hey, I'm Amanda.</h1>
 						<p class="pb-12">That's me and my dog, Prince Robert.</p>
 						<p class="pb-12">
 							I often find myself reflecting on seemingly mundane experiences in my daily life and
