@@ -6,7 +6,7 @@
 	<hr class="separator" />
 	<div class="d-flex space-between align-items-center w-50">
 		<div>
-			<a class="px-4 hoverable" href="/about" target="_blank" aria-label="about page"> About </a>
+			<a class="px-4 hoverable" href="/about" aria-label="about page"> About </a>
 		</div>
 		<div><HomeBtn /></div>
 		<div class="px-4">
