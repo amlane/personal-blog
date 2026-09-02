@@ -20,5 +20,7 @@ export const load = async () => {
         });
     });
 
-    return { links };
+    let sortedData = [...links.sort((a, b) => new Date(a.date) - new Date(b.date))];
+
+    return { sortedData };
 };
